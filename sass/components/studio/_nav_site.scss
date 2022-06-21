@@ -15,15 +15,16 @@
 
 .nav-site__item:not(:last-child) {
     margin-right: 50px;
+
 }
 
 
-.nav-site_item--item-band {
+.nav-site__item--item-band {
     position: relative;
-  }
 
-.nav-site_item--item-band::after {
-    position: absolute;
+
+    &::after{
+        position: absolute;
     content: "";
     width: 100%;
     bottom: -1px;
@@ -31,7 +32,12 @@
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+    }
 }
+
+
+
+
 
 // .nav-site__link
 
